@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+ 
+<html>
+ <head>
+ <title> Ornitoformulario </title>
+ <meta name="description" content="Aprenda a criar um site completo que usa formulários em HTML">
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+ </head>
+ <style>
+        h1 {
+            color: rgb(127, 255, 212);
+        }
+
+        h2 {
+            color: rgb(124, 133, 216);
+        }
+        body {
+            background-color: rgb(255, 238, 207);
+        }
+ </style>
+ <body>
+  <h1> Bem vindo ao site Ornitoformulario</h1> 
+  <h2> Se cadastre gratis e receba maravilhosas imagens de ornitorrincos ineditos e lindos!</h2><br />
+
+
+<!-- DADOS PESSOAIS-->
+<fieldset>
+ <legend>Dados Pessoais</legend>
+ <table cellspacing="10">
+  <tr>
+   <td>
+    <label for="nome">Nome: </label>
+   </td>
+   <td align="left">
+    <input type="text" name="inputNome" id="inputName">
+   </td>
+   <td>
+    <label for="sobrenome">Sobrenome: </label>
+   </td>
+   <td align="left">
+    <input type="text" name="inputSobrenome" id="inputName2">
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <label>Nascimento: </label>
+   </td>
+   <td align="left">
+    <input type="text" name="dia" size="2" maxlength="2" value="dd"> 
+   <input type="text" name="mes" size="2" maxlength="2" value="mm"> 
+   <input type="text" name="ano" size="4" maxlength="4" value="aaaa">
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <label for="cidade">Cidade: </label>
+   </td>
+   <td align="left">
+    <input type="text" name="cidade"> 
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <label>Equipe:</label>
+   </td>
+   <td align="left">
+    <input type="text" name="cpf2" size="2" maxlength="2">
+   </td>
+  </tr>
+ </table>
+</fieldset>
+
+<button onclick="clickbotao()">Cadastrar</button>
+
+<img src="img/219b93f0-ce2a-45ca-9a7f-a8cb408d700b.png" alt="">
+
+ </body>
+ <script src="js/script.js"></script>
+</html>
