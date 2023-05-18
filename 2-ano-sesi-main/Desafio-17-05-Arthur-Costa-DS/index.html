@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <head>
+        <link href="css/estilo.css" rel="stylesheet">
+    </head>
+    <title>Ornitosorteio </title>
+    <meta name="description" content="Aprenda a criar um site completo que usa formulários em HTML">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<style>
+    h1 {
+        color: rgb(145, 99, 30);
+    }
+
+    h2 {
+        color: rgb(204, 143, 72);
+    }
+
+    body {
+        background-color: rgb(243, 225, 192);
+    }
+</style>
+
+<body>
+    <h1> Bem vindo ao site Ornitosorteio!</h1>
+    <h2> Estamos fazendo uma parceria com os colegios Sesi de todo Brasil, então todos os alunos do Sesi que se
+        cadastrarem no nosso site estarão concorrendo a uma pelucia incrivel de ornitorrinco! São no total mais de 500
+        pelucias sendo sorteadas no Brasil todo!!</h2><br />
+
+
+    <!-- DADOS PESSOAIS-->
+    <fieldset>
+        <legend>Dados Pessoais</legend>
+        <table cellspacing="10">
+            <tr>
+                <td>
+                    <label for="nome">Nome: </label>
+                </td>
+                <td align="left">
+                    <input tyxpe="text" name="nome" id="inputNome">
+                </td>
+                <td>
+                    <label for="sobrenome">Sobrenome: </label>
+                </td>
+                <td align="left">
+                    <input tyxpe="text" name="sobrenome" id="inputSobrenome">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Idade:</label>
+                </td>
+                <td align="left">
+                    <input type="text" name="cpf2" size="2" maxlength="2" id="inputIdade">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Sala:</label>
+                </td>
+                <td align="left">
+                    <input type="text" name="cpf2" size="2" maxlength="2" id="inputSala">
+                </td>
+                <td>
+                    <label>Equipe:</label>
+                </td>
+                <td align="left">
+                    <input type="text" name="cpf2" size="2" maxlength="2" id="inputEquipe">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="estado">Estado:</label>
+                </td>
+                <td align="left">
+                    <select name="estado">
+                        <option value="ac">Acre</option>
+                        <option value="al">Alagoas</option>
+                        <option value="am">Amazonas</option>
+                        <option value="ap">Amapá</option>
+                        <option value="ba">Bahia</option>
+                        <option value="ce">Ceará</option>
+                        <option value="df">Distrito Federal</option>
+                        <option value="es">Espírito Santo</option>
+                        <option value="go">Goiás</option>
+                        <option value="ma">Maranhão</option>
+                        <option value="mt">Mato Grosso</option>
+                        <option value="ms">Mato Grosso do Sul</option>
+                        <option value="mg">Minas Gerais</option>
+                        <option value="pa">Pará</option>
+                        <option value="pb">Paraíba</option>
+                        <option value="pr">Paraná</option>
+                        <option value="pe">Pernambuco</option>
+                        <option value="pi">Piauí</option>
+                        <option value="rj">Rio de Janeiro</option>
+                        <option value="rn">Rio Grande do Norte</option>
+                        <option value="ro">Rondônia</option>
+                        <option value="rs">Rio Grande do Sul</option>
+                        <option value="rr">Roraima</option>
+                        <option value="sc">Santa Catarina</option>
+                        <option value="se">Sergipe</option>
+                        <option value="sp">São Paulo</option>
+                        <option value="to">Tocantins</option>
+                    </select>
+                </td>
+                <td>
+                    <label>Cidade:</label>
+                </td>
+                <td align="left">
+                    <input type="text" name="cpf2" id="inputMora">
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+
+    <button onclick="clickbotao()"> Cadastrar</button>
+
+    <div>
+        <h2>Pelucia que você pode ganhar:</h2>
+        <img src="img/202104161559_L7S3_.avif" alt="">
+        <img src="img/image_1024.jpg" alt="">
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Sobrenome</th>
+                <th>Idade</th>
+                <th>Sala</th>
+                <th>Equipe</th>
+                <th>Cidade</th>
+
+            </tr>
+        </thead>
+        <tbody id="corpo-tabela">
+            <tr>
+                <th>...</th>
+                <th>...</th>
+                <th>...</th>
+                <th>...</th>
+                <th>...</th>
+                <th>...</th>
+            </tr>
+        </tbody>
+    </table>
+
+
+</body>
+<script src="js/script.js"></script>
+
+</html>
